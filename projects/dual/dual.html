@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+"http://www.w3.org/TR/html4/frameset.dtd">
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<html>
+<head>
+<title> Differential Geometry Based Shape Reconstruction from Image Curves </title>
+<style type="text/css">
+  @import "../../homepage.css"
+</style>
+</head>
+
+<body>
+<hr align="center" style="color:red; width:600px">
+<p align="center" style="margin:0em; padding:0em">
+|&nbsp;
+<a href="../../aboutme.html">about me</a>
+&nbsp;|&nbsp;
+<a href="../../cv.html">curriculum vitae</a>
+&nbsp;|&nbsp;
+<a href="../../research.html">research</a>
+&nbsp;|&nbsp;
+<a href="../../projects/iray2/iray2.html">demos</a>
+&nbsp;|&nbsp;
+<a href="../../courses.html">courses</a>
+&nbsp;|
+</p>
+<hr align="center" style="color:red; width:600px">
+
+<table align="center" width="800px">
+<tr><td>
+<div>
+<h2 align="center">
+Differential Geometry Based Shape Reconstruction from Image Curves
+</h2>
+<p align="center">
+<img src="dual_david_result.png" alt="reconstruction of david bust"/>
+<img src="dual_frog_result.png" alt="reconstruction of frog"/>
+</p>
+<p>
+In this paper, the duality in differential form is developed between a 3D primal surface and its dual manifold formed by the surface's tangent planes, that is, each tangent plane of the primal surface is represented as a four-dimensional vector that constitutes a point on the dual manifold. The iterated dual theorem shows that each tangent plane of the dual manifold corresponds to a point on the original 3D surface, that is, the "dual" of the "dual" goes back to the "primal". This theorem can be directly used to reconstruct 3D surface from image edges by estimating the dual manifold from these edges. This study results in the robust differential dual operator. We argue that the operator makes good use of the information available in the image data by using both points of intensity discontinuity and their edge directions; we provide a simple physical interpretation of what the abstract algorithm is actually estimating and why it makes sense in terms of estimation accuracy; our algorithm operates on all edges in the images, including silhouette edges, self occluding edges, and texture edges, without distinguishing their types (thus, resulting in improved accuracy and handling locally concave surface estimation if texture edges are present).
+</p>
+
+<p>
+Experiments with both synthetic and real images demonstrate that the operator is accurate, robust to degeneracies and noise, and general for reconstructiong free-form objects from occludiong edges and texture edges detected in calibrated images or video sequences.
+<p>
+
+<p>
+Publications:
+<ul>
+  <li>Shubao Liu, Kongbin Kang, Jean-Philippe Tarel and David B. Cooper, <a href="../../publication/PAMI08.pdf">Free-form Object Reconstruction from Silhouettes, Occluding Edges and Texture Edges: A Unified and Robust Operator Based on Duality</a>, IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), vol. 30, no. 1, pp. 131-146, January 2008.
+</ul>
+</p>
+
+</div>
+</td></tr>
+</table>
+
+<hr style = "width:80%">
+<p align="center"><small>Last updated on Feb. 10, 2010</small></p>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6010822;
+var sc_invisible=1;
+var sc_security="f36ac8fc";
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="counter customisable"
+href="http://www.statcounter.com/free_hit_counter.html"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6010822/0/f36ac8fc/1/" alt="counter
+customisable" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+"http://www.w3.org/TR/html4/frameset.dtd">
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<html>
+<head>
+<title>Inverse Ray Tracing</title>
+<style type="text/css">
+  @import "../../homepage.css"
+</style>
+</head>
+
+<body>
+<hr align="center" style="color:red; width:600px">
+<p align="center" style="margin:0em; padding:0em">
+|&nbsp;
+<a href="../../aboutme.html">about me</a>
+&nbsp;|&nbsp;
+<a href="../../cv.html">curriculum vitae</a>
+&nbsp;|&nbsp;
+<a href="../../research.html">research</a>
+&nbsp;|&nbsp;
+demos
+&nbsp;|&nbsp;
+<a href="../../courses.html">courses</a>
+&nbsp;|
+</p>
+<hr align="center" style="color:red; width:600px">
+<p align="center">
+&nbsp;
+demo 1
+&nbsp;|&nbsp;
+<a href="../iray/iray.html">demo 2</a>
+&nbsp;
+</p>
+
+<table align="center" width="1000px">
+<tr><td>
+<div>
+<h2 align="center">A Statistical Inverse Ray Tracing Approach to Multi-View Stereo</h2>
+<h3 align="center">Introduction &nbsp;|&nbsp; <a href="iray2_datasets.html">Datasets</a> &nbsp;|&nbsp; <a href="iray2.html">Recent Results</a> &nbsp;|&nbsp; <a href="iray2_vs_pmvs2_building14.html">Comprison with PMVS2</a> &nbsp;|&nbsp; <a href="iray2_convergence.html">Convergence</a></h3>
+<p>
+<h3>Abstract:</h3> This work addresses the problem of capturing 3D geometry and appearance from multiple 2D images taken from different views, which has wide applications in virtual reality, entertainment, human-computer interface, surveillance, navigation, and high-level vision tasks, etc. In this work, we present an <u><i>inverse ray tracing</i></u> approach based on statistical inference. Instead of matching image features/pixels across images, the inverse ray tracing approach models the image generation process directly and searches for the best 3D geometry and surface reflectance model to explain all the observations. <i>It can better handle difficult problems in multi-view stereo, including large camera baseline, occlusion, matching ambiguities, etc. than traditional methods, without additional information and assumptions, such as initial surface estimate or simple background assumption.</i> Here the image generation process is modeled through volumetric ray tracing, where the <u><i>oclusion/visibility is accurately modeled</i></u>. All the constraints (including ray constraints and prior knowledge about the geometry) are put into the <u><i>Ray Markov Random Field</i></u> (Ray MRF) formulation. This MRF model is unusual in the sense that the ray-clique, which models the ray-tracing process, consists of thousands of random variables, instead of two to dozens as in typical MRFs. This presents a big challenge to the inference algorithm, because of the combinatorial explosion of possible configurations. In this work an algorithm with <u><i>linear computational complexity</i></u> is developed to solve the estimation problem. More specifically, we show that a highly optimized belief propagation algorithm, <u><i>deep belief propagation</i></u> (DBP), can tackle the challenging problem effectively and efficiently, by exploring the deep factorization structure of the ray-clique energy. Then the DBP algorithm is also extended to solve the inference problem for a broader class of <u><i>higher-order MRFs</i></u>. <i> The algorithm developed is capable of handling general and complex scenes of large varieties, general camera configurations (both small and large baselines), and can generate accurate and photo-realistic 3D models</i>. These have been verified by extensive experiments on standard and home-grown challenging datasets.
+<h3>Publication:</h3>
+<ul>
+<li>
+  <b>Shubao Liu</b> and David B. Cooper, "A Complete Statistical Inverse Ray Tracing Approach to Multi-view Stereo", to appear in Proceedings of <b>CVPR</b>'11, Colorado Springs, CO, 2011 [<a href="publication/CVPR11_liu.pdf">preprint pdf</a>].
+</li>
+</ul>
+</li>
+</p>
+</td></tr>
+</table>
+
+<hr style = "width:800px">
+<p align="center"><small>Last updated on Nov. 24, 2010</small></p>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6010822; 
+var sc_invisible=1; 
+var sc_security="f36ac8fc"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="counter customisable"
+href="http://www.statcounter.com/free_hit_counter.html"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6010822/0/f36ac8fc/1/"
+alt="counter customisable" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>

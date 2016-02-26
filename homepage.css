@@ -1,0 +1,14 @@
+body {
+  font-family: georgia,sans-serif;
+}
+img {
+  border-style:none;
+}
+#left {
+  width:500px;
+}
+#right {
+  width:100%;
+}
+ul, ol { margin-left:1.5em; padding-left:0px; }
+li { margin-bottom:0.5em; }

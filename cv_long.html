@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+"http://www.w3.org/TR/html4/frameset.dtd">
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<html>
+<head>
+<title> Shubao Liu's curriculum vitae</title>
+</head>
+<body>
+
+<hr align="center" style="color:red; width:600px">
+<p align="center" style="font-family:palatino; color:red; margin:0em; padding:0em">
+|&nbsp;
+<a href="aboutme.html">about me</a>
+&nbsp;|&nbsp;
+curriculum vitae
+&nbsp;|&nbsp;
+<a href="research.html">research</a>
+&nbsp;|&nbsp;
+<a href="courses.html">courses</a>
+&nbsp;|
+</p>
+<hr align="center" style="color:red; width:600px">
+<p align="center"><a href="cv_liu.pdf">Download the PDF version</a></p>
+<table align="center" width="800px">
+<tr><td>
+<div style="font-family:palatino">
+<h2> Shubao Liu </h2>
+PhD Student (6th year)<br/>
+Computer Vision Group,<br/>
+Laboratory for Engineering Man/Machine Systems (LEMS),<br/>
+Electrical and Computer Engineering,<br/>
+School of Engineering,<br/>
+Brown University
+
+<h3>Education</h3>
+<p>
+<ul>
+<li>Ph.D., Computer Vision, Brown University, Providence, RI, 2005 - Jan. 2011<br>
+    Advisor: Professor David B. Cooper
+<li>M.Phil., Computational Intelligence, The Chinese University of Hong Kong, Hong Kong, 2003 - 2005.<br>
+    Advisor: Professor Jun Wang
+<li>B.E., Information Technology, The University of Science and Technology of China, Hefei, China, 1999 - 2003
+</ul>
+</p>
+
+<h3>Research Interest</h3>
+<p>
+I am interested in developing statistical methods for various computer vision problems, and their practical applications. In particular, I am interested in probabilistic graphical models and their efficient inference, such as MRF-based generative modeling and inference of low-level vision problems, hierarchical models (e.g., hierarchical MRF, hierarchical clustering and segmentation), and graphical model based image parsing. On the application side, I am interested in various vision-based graphics applications, such as photo-realistic virtual reality, large scale 3D scene reconstruction, etc. More specifically, I am interested in the following sub-topics in computer vision and machine learning:
+<ul>
+<li> Low-level Vision: multi-view stereo, vision-based graphics, MRF and efficient inference
+<li> Image Understanding: hierarchical segmentation, scene graph parsing
+<li> Machine Learning: hierarchical clustering, efficient learning and inference algorithms for graphical models
+</ul>
+</p>
+
+<h3>PhD Dissertation / Main Research Achievements during PhD Study</h3>
+<ul>
+<li><b>Title</b>: <b>Statistical Inverse Ray Tracing for Image-Based 3D Modeling</b></li>
+<li><b>Abstract</b>: Capturing 3D geometry and appearance from multiple 2D images taken from different views is a classic problem in computer vision and has applications in virtual reality, entertainment, human-computer interface, surveillance, navigation, and high-level vision tasks, etc. In this thesis, we present an <u><i>inverse ray tracing</i></u> approach. Instead of matching image features/pixels across images, the inverse ray tracing approach models the image generation process directly and searches for the best 3D model and surface reflectance model to explain all the observations. <i>It can better handle difficult problems in traditional multi-view stereo methods, including large camera baseline, occlusion, matching ambiguities, etc., without additional information and assumptions, such as initial surface estimate or simple background assumption.</i> Here the image generation process is modeled through volumetric ray tracing, where the <u><i>oclusion/visibility is accurately modeled</i></u>. All the constraints (including ray constraints and prior knowledge about the geometry) are put into the <u><i>Ray Markov Random Field</i></u> (Ray MRF) formulation. This MRF model is unusual in the sense that the ray-clique, which models the ray-tracing process, consists of thousands of random variables, instead of two to dozens as in the traditional MRF. This presents a big challenge to the inference algorithm, because of the combinatorial explosion of possible configurations. In this work an algorithm with <u><i>linear computational complexity</i></u> is developed to solve the estimation problem. More specifically, we show that a highly optimized belief propagation algorithm, <u><i>deep belief propagation</i></u> (DBP), can tackle the challenging problem effectively and efficiently, by exploring the deep factorization structure of the ray-clique energy. Then the DBP algorithm is also extended to solve the inference problem for a broad class of <u><i>higher-order MRFs</i></u>. <i> The algorithm developed is capable of handling general and complex scenes of large varieties, general camera configurations (both small and large baselines), and can generate accurate and photo-realistic 3D models</i>. These have been verified by extensive experiments on standard and home-grown challenging datasets.
+</li>
+</ul>
+
+<h3>Work Experience</h3>
+<p>
+<ul>
+<li>Intern, Google Inc., May-August, 2008<br>
+  Designed and implemented a learning algorithm based on maximum pseudo-likelihood for CRF-based text detection in natural images; Prototyped a novel hierarchical MRF based text detection algorithm.
+</ul>
+</p>
+
+<h3>Research Experience</h3>
+<ul>
+<li>
+<p>
+<b>Deep Belief Propagation for Efficient Higher-Order MRF Inference</b>, <br>
+Advisor: Professor David B. Cooper, Brown University, 2010--present
+</p>
+<p>
+In this work, we develop an efficient belief propagation algorithm, deep belief propagation, for the inference of a class of higher-order MRFs. Recent success in using MRF to solve computer vision problems has also revealed its deficiency in capturing long-range variable interactions. This has motivated people to study the cliques with large number of variables, i.e., higher-order cliques. Another motivation for studying higher-order cliques comes from the long-range sensing, where sensed signals record the interaction between a large number of random variables. These higher-order MRFs have posed challenges to the corresponding inference problem. In this work, it is shown that although these higher-order cliques cannot be further factorized as smaller cliques, there exists another kind of ``deep'' factorization structure of these cliques, which can be explored by dynamic programming. The developed dynamic programming algorithm can be further implemented using message passing, resulting in the deep belief propagation algorithm for the higher-order MRF inference.
+</p>
+<li>
+<p>
+<b>Statistical Inverse Ray Tracing for Multi-view 3D Modeling: Ray Markov Random Fields and Efficient Inference</b>, <br>
+Advisor: Professor David B. Cooper, Brown University, 2008--present
+</p>
+<p>
+This work studies the problem of inferring a scene's 3D geometry and appearance from multiple 2D images with statistical methods. Traditionally the problem has been studied mostly with the feature matching -- point cloud reconstruction pipeline. This pipeline relies heavily on the performance of the feature matching step, which suffers a lot from large camera baseline, occlusion and matching ambiguities. Here we propose to tackle the whole problem from the inverse problem perspective: modeling the observation process, and then searching for the best model to explain the observation. We model the image generation process through volumetric ray tracing, where the occlusion/visibility is accurately modeled. We further show that there exists a linear computational complexity algorithm to solve the corresponding estimation problem. We optimally put all the constraints (including ray constraints and prior knowledge about the geometry) into the Markov Random Fields (MRF) formulation. This MRF model is unusual in the sense that the ray-clique, which models the ray-tracing process, consists of thousands of random variables (in our case, voxels), instead of two to dozens as in the traditional MRF. This presents a big challenge to the inference algorithm, due to the combinatorial exploration of possible configurations for each ray-clique. It was believed that the problem cannot be solved efficiently, without resorting to some additional information (e.g., initial surface) or some approximation. However in this work, we show that a highly optimized belief propagation algorithm -- deep belief propagation -- can tackle the challenging problem effectively and efficiently, by exploring the deep factorization structure of the ray-clique energy. The framework and algorithm developed are capable of handling general and complex scenes, general camera configurations (both small and large baselines), and can generate photo-realistic 3D models. This has been verified by extensive experiments on varieties of standard and home-grown datasets. This work has been published in IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2010. More information is available at <a href="projects/iray/iray.html">the research project page</a>.
+</p>
+<li>
+<b>Distributed Volumetric Scene Reconstruction with a Randomly Configured Camera Network</b>,<br>
+Advisor: Professor David B. Cooper, Brown University, 2007--2009
+<p>
+With the increasing number of (surveillance) camera networks installed, distributed vision algorithms are becoming an emerging topic in computer vision research. In this work, we study the problem of reconstructing scene's 3D structure from a network of randomly and sparsely placed cameras. The goal is to build a scalable distributed 3D reconstruction algorithm for the smart camera network. In this work, we explore the gradient information (soft edge) of the image, which is robust to the environmental lighting and camera noise, to get a 3D reconstruction by optimizing the consistency between the surface's occluding contours and the image gradients. The proposed algorithm is also robust to the background clutter. By exploring the locality property of the surface occluding contour, we design a distributed algorithm that adaptively balances the cameras' load and reduces the communication cost among cameras through an efficient message passing communication protocol. The control of inter camera communications and distributed processing is important both for speed in estimation/recognition and concerning use of stored battery energy. This work has been published in IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2009.
+</p>
+
+<li><b>Free-form Object Reconstruction from Silhouettes, Occluding Edges and Texture Edges: A Unified and Robust Operator based on Duality</b>,<br>
+Advisor: Professor David B. Cooper, Dr. Kongbin Kang and Dr. Jean-Philippe Tarel, Brown University, 2005--2007
+
+<p>
+In this work, we explore the geometry of the ensemble of the surface's tangent planes, and its application in 3D reconstruction from 2D edges. The <i> duality in differential form</i> is developed between a 3D primal surface and the manifold formed by the surface's tangent planes, i.e., each tangent plane of the primal surface is represented as a four-dimensional vector which constitutes a point on the dual manifold. The iterated dual theorem shows that each tangent plane of the dual manifold corresponds to a point on the original 3D surface, i.e., the ``dual'' of the ``dual'' goes back to the ``primal''. This theorem can be directly used to reconstruct 3D surfaces from image edges by estimating the dual manifold from these edges. The algorithm operates on all edges in the images, i.e., silhouette edges, self occlusion edges, and texture edges without distinguishing their types (thus resulting in improved accuracy and handling locally concave surface estimation if texture edges are present), the algorithm automatically handles various degeneracies, and the algorithm incorporates new methodologies for implementing the required operations such as appropriately relating edges in pairs of images, and evaluating and using the algorithm's sensitivity to noise and its confidence in the accuracy of an estimated 3D point.  Experiments with both synthetic and real images demonstrate that the operator is accurate, robust to noise and degeneracies, and general for reconstructing free-form objects from occluding edges and texture edges detected in calibrated images or video sequences. This work has been published in IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2008.
+</p>
+</ul>
+
+<h3>Peer Reviewed Publications</h3>
+<h4>Journal Articles</h4>
+<ol>
+<li> <b>Shubao Liu</b>, Kongbin Kang, Jean-Philippe Tarel and David B. Cooper, "Free-form Object Reconstruction from Silhouettes, Occluding Edges and Texture Edges: A Unified and Robust Operator Based on Duality", <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i> (<b>TPAMI</b>), vol. 30, no. 1, pp. 131--146, January 2008.
+<li> <b>Shubao Liu</b> and Jun Wang, "A Simplified Dual Neural Network for Quadratic Programming with Application for K-Winners-Take-All Operation", <i>IEEE Transactions on Neural Networks</i> (<b>TNN</b>), vol.  17, no. 6, pp. 1500-1510, 2006.
+</ol>
+<h4>Conference Papers</h4>
+<ol>
+<li> <b>Shubao Liu</b> and David B. Cooper, "Ray Markov Random Fields for Image-Based 3D Modeling: Model and Efficient Inference", Proceedings of <b>CVPR</b>'10, pp.1530--1537, San Francisco, CA, 2010.
+<li> <b>Shubao Liu</b>, Kongbin Kang, Jean-Philippe Tarel and David B. Cooper, "Distributed Volumetric Scene Geometry Reconstruction With a Network of Distributed Smart Cameras", Proceedings of <b>CVPR</b>'09, pp.2334--2341, Miami, FL, 2009.
+<li> <b>Shubao Liu</b> and Jun Wang, "A New K-Winners-Take-All Neural Network," International Joint Conference on Neural Networks (<b>IJCNN</b>), pp. 712-716, Montreal, Canada, 2005.
+<li> <b>Shubao Liu</b> and Jun Wang, Obstacle Avoidance for Kinematically Redundant Manipulators Using the Deterministic Annealing Neural Network, International Symposium on Neural Networks (<b>ISNN</b>), pp. 240 - 246, May 2005. </li>
+<li> <b>Shubao Liu</b> and Jun Wang, A Dual Neural Network for Bi-Criteria Torque Optimization of Redundant Robot Manipualtors, Proceedings of International Conference on Neural Information Processing (<b>ICNIP</b>), pp. 1142-1147, November 2004.</li>
+<li> <b>Shubao Liu</b> and Jun Wang, "Blind Adaptive Multiuser Detection Using a Recurrent Neural Network", International Conference on Communications, Circuits and Systems (<b>ICCCS</b>), pp. 1071-1075, June 2004.
+</ol>
+<h4>Articles in Preparation</h4>
+<ol>
+<li> "Statistical Inverse Ray Tracing for Multi-view 3D Modeling: Ray Markov Random Fields and Deep Belief Propagation".
+</ol>
+
+<h3>Academic Activities</h3>
+<ul>
+<li> Presented a paper at CVPR'10, San Francisco, CA, 2010.
+<li> Presented a paper at CVPR'09, Miami, FL, 2009.
+<li> Attended the Graduate Summer School: Probabilistic Models of Cognition: The Mathematics of Mind, Institute of Pure and Applied Mathematics, UCLA, July 9 -- 26, 2007.
+<li> Reviewed papers for ICCV, CVPR, ISPRS Journal of Photogrammetry and Remote Sensing, Neural Computation, Neurocomputing, Neural Processing Letters.
+</ul>
+
+<h3>Awards</h3>
+<ul>
+<li> Research Assistantship, Brown University, 06/2006-2010
+<li> University Fellowship, Brown University, 09/2005-05/2006
+<li> Postgraduate Scholarship, The Chinese University of Hong Kong, 08/2003-08/2005
+<li> Outstanding Student Scholarship, University of Science and Technology of Clina, 2002
+<li> CAST Scholarship, University of Science and Technology of Clina, 2001
+<li> Outstanding Student Scholarship, University of Science and Technology of Clina, 2000
+</ul>
+
+<h3>Programming Skills</h3>
+<ul>
+<li> highly proficient and 10-year experience in C, C++ and Matlab
+<li> familiar with Java.
+<li> experience with common libraries in numerical computing, computer vision and computer graphics, including BLAS, LAPACK, ARPACK, SBA, GSL, VTK, OpenGL, bundler, OpenCV, VXL, and etc.
+</ul>
+
+</div>
+</td></tr>
+</table>
+
+<hr style = "width:800px">
+<p align="center" style="color:#888888"><small>Last updated on Nov. 30, 2010</small></p>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6010822; 
+var sc_invisible=1; 
+var sc_security="f36ac8fc"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="counter customisable"
+href="http://www.statcounter.com/free_hit_counter.html"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6010822/0/f36ac8fc/1/"
+alt="counter customisable" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>
+

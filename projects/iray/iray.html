@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+"http://www.w3.org/TR/html4/frameset.dtd">
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<html>
+<head>
+<title>Ray Markov Random Fields</title>
+<style type="text/css">
+  @import "../../homepage.css"
+</style>
+</head>
+
+<body>
+<hr align="center" style="color:red; width:600px">
+<p align="center" style="margin:0em; padding:0em">
+|&nbsp;
+<a href="../../aboutme.html">about me</a>
+&nbsp;|&nbsp;
+<a href="../../cv.html">curriculum vitae</a>
+&nbsp;|&nbsp;
+<a href="../../research.html">research</a>
+&nbsp;|&nbsp;
+demos
+&nbsp;|&nbsp;
+<a href="../../courses.html">courses</a>
+&nbsp;|
+</p>
+<hr align="center" style="color:red; width:600px">
+<p align="center">
+&nbsp;
+<a href="../iray2/iray2.html">demo 1</a>
+&nbsp;|&nbsp;
+demo 2
+&nbsp;
+</p>
+
+<table align="center" width="800px">
+<tr><td>
+<div> 
+<h2 align="center">Ray Markov Random Fields for Image-Based 3D Modeling: Model and Efficient Inference</h2>
+<p align="center">
+</p>
+<p align="center">
+<table align="center">
+<tr><th>Input Images</th><th>3D Reconstruction</th>
+<tr><th>
+<object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/Ym17C7I2eOI&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Ym17C7I2eOI&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed></object>
+</th><th>
+<object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/LNw4wkuRWS4&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/LNw4wkuRWS4&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed></object>
+</th></tr>
+</table>
+</p>
+<h4>Overview</h4>
+<p>
+This project studies the problem of inferring scene's 3D geometry and appearance from multiple 2D images with statistical methods. We tackle the problem by exploring the nature of the image generation process -- ray tracing, within the analysis by synthesis framework. We first build a statistical model to describe the image generation process, and put all the constraints (including image observation and prior knowledge about the geometry) into the Markov Random Fields (MRF) formulation. This MRF model is really unusual in the sense that the ray-clique, which models the image generation process, consists of thousands of random variables (in our case, voxels), instead of two to dozens in the usual MRF. This presents a big challenge to the inference algorithm. In this work, a highly optimized belief propagation algorithm (named as compact belief propagation) is developed to tackle the challenging optimization/estimation problem, by exploring the compactness structure of the clique energy. The framework and algorithm developed is capable of handling general and complex scenes, verified by extensive experiments on varieties of standard and home-grown datasets.
+</p>
+<p> Keypoint: <b><big>Occlusion/visibility is accurately modeled and a linear time algorithm is found to estimate the occlusion/visibility.</big></b> </p>
+<p align="center">
+<img src="poster_patches/poster_patch1.png"></img>
+<img src="poster_patches/poster_patch2.png"></img>
+<img src="poster_patches/poster_patch3.png"></img>
+<img src="poster_patches/poster_patch4.png"></img>
+<img src="poster_patches/poster_patch5.png"></img>
+<img src="poster_patches/poster_patch6.png"></img>
+
+<h4>3D Reconstruction Gallery</h4>
+<p align="left">Note: The results below are reconstructed with 8M-voxel (about 200^3) resolution. The image resolution used is about 400x300. All the images are auto-calibrated with Bundler.
+<p align="center">
+<table align="center">
+<tr><th>Input Images</th><th>3D Reconstruction</th>
+<tr><th>
+<object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/0-DUJ7Jvl3U&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/0-DUJ7Jvl3U&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed></object>
+</th><th> <object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/kejLAm-GpSo&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/kejLAm-GpSo&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed></object>
+</th></tr>
+<tr><th>Rhode Island capitol building</th><th></th></tr> 
+<tr><th>
+<object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/bXzaLnxoj68&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/bXzaLnxoj68&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed></object>
+</th><th>
+<object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/l8-tH4xGnI0&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/l8-tH4xGnI0&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed></object>
+</th></tr>
+<tr><th>Downtown Providence</th><th></th></tr>
+<tr><th>
+<object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/YjN2SZV89aI&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/YjN2SZV89aI&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed></object>
+</th><th>
+<object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/mBN0l38F9X4&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/mBN0l38F9X4&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed></object>
+</th></tr>
+<tr><th>Toy Hollow Elephant captured with a hand-held camera. The object geometry is complex.</th><th></th></tr> 
+<tr><th>
+<object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/kR7NY-kIOOw&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/kR7NY-kIOOw&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed></object>
+</th><th>
+<object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/AmwBzRgleGw&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/AmwBzRgleGw&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed></object>
+</th></tr>
+<tr><th>Statue at Brown campus captured with a hand-held camera. The object material is far from Lambertian.</th><th></th></tr>
+<tr><th>
+<object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/Ny_jodMNJuo&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Ny_jodMNJuo&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed></object>
+</th><th>
+<object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/7O45g9MFplc&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/7O45g9MFplc&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed></object>
+</th><tr>
+<tr><th>Flower captured with a hand-held camera. The geometry is complex and the material is far from Lambertian.</th><th></th></tr>
+</table>
+</p>
+
+<h4>Publications:</h4>
+<ul>
+<li> <b>Shubao Liu</b> and David B. Cooper, "Ray Markov Random Fields for Image-Based 3D Modeling: Model and Efficient Inference", Proceedings of <b>CVPR</b>'10, pp. 1530--1537, San Francisco, CA, 2010. &nbsp[<a href="../../publication/CVPR10_corrected.pdf">typo corrected version</a>]&nbsp[poster &nbsp<a href="CVPR10Liu_poster.jpg">jpg</a>&nbsp <a href="CVPR10Liu_poster.pdf">pdf</a>]
+</ul>
+</div>
+</td></tr>
+</table>
+
+<hr style = "width:800px">
+<p align="center"><small>Last updated on Jul. 6, 2010</small></p>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6010822; 
+var sc_invisible=1; 
+var sc_security="f36ac8fc"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="counter customisable"
+href="http://www.statcounter.com/free_hit_counter.html"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6010822/0/f36ac8fc/1/"
+alt="counter customisable" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>

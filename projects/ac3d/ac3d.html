@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+"http://www.w3.org/TR/html4/frameset.dtd">
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<html>
+<head>
+<title> Active Contour In the 3D Context </title>
+<style type="text/css">
+  @import "../../homepage.css"
+</style>
+</head>
+
+<body>
+<hr align="center" style="color:red; width:400pt">
+<p align="center" style="margin:0em; padding:0em">
+|&nbsp;
+<a href="../../aboutme.html">about me</a>
+&nbsp;|&nbsp;
+<a href="../../cv.html">curriculum vitae</a>
+&nbsp;|&nbsp;
+<a href="../../research.html">research</a>
+&nbsp;|&nbsp;
+<a href="../../projects/iray2/iray2.html">demos</a>
+&nbsp;|&nbsp;
+<a href="../../courses.html">courses</a>
+&nbsp;|
+</p>
+<hr align="center" style="color:red; width:400pt">
+
+<table align="center" width="800px">
+<tr><td>
+<div>
+<h2 align="center">Active Contour in the 3D Context</h2>
+<p align="center">
+<img src="result_dino.jpg">
+<img src="result_david.jpg">
+</p>
+<p>
+3D object reconstruction from image(s) is a central problem studied from the very beginning of computer vision. In essence, it is the reverse process of rendering, which depends on many factors, e.g., object's geometry, material, environment, illumination, etc. This reverse process is too difficult to solve directly, which makes it still an open problem.
+</p>
+
+<p>
+But given dozens of images taken from different views, the problem can be tackled by getting some simple geometric relationship using the data redundancy. This is what the multi-view stereo does. Under the assumption that the object surface is Lambertian and the illumination is fixed, a point on the surface will have identical intensity (color) values in different views.
+</p>
+
+<p>
+In this paper, we study
+<ol>
+<li> another geometry introduced from occlusion, which is robust to the object's material and illumination. This makes it work for non-Lambertian object and illumination-changing environments.
+<li>the PDE based approach to get a complete object reconstruction based on the above occlusive geometry.
+<li>smoothing the objective function and modifying the searching direction to make it less sensitive to the local minima.
+</ol>
+</p>
+
+<p>
+Finally, we get a pretty robust algorithm which can automatically converge to the object shape from the input original images without user interaction under complex background.
+</p>
+
+<p align="center">
+<img src="dino_evolution.png">
+<img src="david_evolution.png">
+</p>
+
+<h4>Publication:</h4>
+<p>
+<ul>
+<li> Shubao Liu, Kongbin Kang, Jean-Philippe Tarel and David B. Cooper, "Distributed Volumetric Scene Geometry Reconstruction With a Network of Distributed Smart Cameras", CVPR'09, pp.2334--2341, Miami, FL, 2009.
+</ul>
+</p>
+
+</div>
+</td></tr>
+</table>
+
+<hr style = "width:80%">
+<p align="center"><small>Last updated on Feb. 10, 2010</small></p>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6010822;
+var sc_invisible=1;
+var sc_security="f36ac8fc";
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="counter customisable"
+href="http://www.statcounter.com/free_hit_counter.html"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6010822/0/f36ac8fc/1/" alt="counter
+customisable" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>
+
