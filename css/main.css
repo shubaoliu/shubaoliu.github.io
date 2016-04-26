@@ -323,10 +323,11 @@ pre {
  */
 .share-page {
   text-align: right;
+  color: #828282;
+  padding: 0px 5px;
   border-radius: 5px; }
   .share-page a {
     font-weight: 300;
-    #color: #fff;
     margin-left: 10px; }
     .share-page a:hover {
       border-bottom: 1px dashed #fff; }
