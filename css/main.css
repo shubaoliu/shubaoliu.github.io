@@ -140,9 +140,12 @@ pre {
   display: inline-block;
   width: 16px;
   height: 16px;
-  vertical-align: middle; }
-  .icon > svg path {
-    fill: #828282; }
+  vertical-align: middle;
+  /*
+          path {
+              fill: $grey-color;
+          }
+  */ }
 
 /**
  * Site header
@@ -314,6 +317,19 @@ pre {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+
+/**
+ * Share page
+ */
+.share-page {
+  text-align: right;
+  border-radius: 5px; }
+  .share-page a {
+    font-weight: 300;
+    #color: #fff;
+    margin-left: 10px; }
+    .share-page a:hover {
+      border-bottom: 1px dashed #fff; }
 
 /**
  * Syntax highlighting styles
