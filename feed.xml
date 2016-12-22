@@ -6,9 +6,31 @@
 </description>
     <link>http://shubaoliu.github.com/</link>
     <atom:link href="http://shubaoliu.github.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 09 Dec 2016 11:17:02 -0500</pubDate>
-    <lastBuildDate>Fri, 09 Dec 2016 11:17:02 -0500</lastBuildDate>
+    <pubDate>Wed, 21 Dec 2016 19:04:38 -0500</pubDate>
+    <lastBuildDate>Wed, 21 Dec 2016 19:04:38 -0500</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Difficulty Levels of Different AI Tasks</title>
+        <description>&lt;p&gt;Can we measure the difficulty levels of different AI tasks? For example, is playing Go game more difficult than doing chores? This problem arose on the public media earlier this year, due to the media coverage of historic moment of AlphaGo defending Lee Sedol. There is a related question: Can we gauge the progress of artificial intelligence compared with human intelligence?&lt;/p&gt;
+
+&lt;p&gt;Based on the AI development history, our answer is likely to be “NOT SO MUCH”. The history shows that what we thought more difficult AI tasks are less difficult than the ones we thought easier, and vice versa.&lt;/p&gt;
+
+&lt;p&gt;AI has a surprising history, with several ups and downs, in the past half of century. This is partly correlated with our assessment of the difficult levels of different AI tasks. Initially, we thought board games (such as chess and go) was harder, while perception processing (such as listening, seeing) was easier. This idea is formed by extrapolating from our own experience of biological intelligence, where computation and logic is harder than perception, which seems effortless. Now the history has proven that we were completely wrong. So our assessment of the difficult level of different AI tasks have changed dramatically over the past few decades.&lt;/p&gt;
+
+&lt;p&gt;Generally speaking, we take two approaches in measuring the AI task difficulties. The first approach is purely empirical and retrospective: We generally assume that all the AI tasks we have solved are easier, while the ones we haven’t solved yet are more difficult. So now, we think doing chores is more difficult than playing board games, including Go.&lt;/p&gt;
+
+&lt;p&gt;The second approach argues that some tasks are inherently more difficult because they needs to achieve the same goals based on less information. For example, we can say that unsupervised learning is more difficult than supervised learning, because it does not require additional task-specific annotations. The problem with this approach is that there are many tasks that are parallel (in the sense that they process different kinds of inforamtion), and we cannot measure their relative degree of difficulty based on that. For example, you cannot say that understanding language (NLP) is more difficult than understanding the visual world (computer vision), and vice versa.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 21 Dec 2016 00:00:00 -0500</pubDate>
+        <link>http://shubaoliu.github.com/blog/2016/12/21/difficulty-levels-of-different-ai-tasks.html</link>
+        <guid isPermaLink="true">http://shubaoliu.github.com/blog/2016/12/21/difficulty-levels-of-different-ai-tasks.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Three Aspects of Brain-Like Learning</title>
